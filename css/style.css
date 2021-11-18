@@ -1,0 +1,246 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.woff') format('woff2'),
+		url('../fonts/Gilroy-Medium.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.woff') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff2') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1 {
+	font-family: Gilroy;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px;
+}
+.block {
+	width: auto;
+}
+.wrapper {
+	min-height: 100%;
+	padding: 30px;
+	background-color: rgb(191, 156, 224);
+	width: 1440px;
+}
+/* .main {
+	background-color: rgb(169, 223, 116);
+	height: 500px;
+} */
+/* Флекс-контейнер */
+/* .block {
+	border: 10px solid rgb(160, 57, 57);
+	font-size: 0;
+	margin: 0 -10px;
+	height: 600px; */
+/* Включение Flex-модуля  */
+/* display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	align-content: stretch;
+	
+} */
+/* Флекс-элемент */
+/* .block__element {
+	border: 10px solid rgb(41, 110, 41);
+	margin: 0 10px;
+	font-size: 30px;
+	color: #fff;
+	flex: 0 0 33.333%;
+	background-color: rgb(214, 102, 214);
+	padding: 10px;
+} */
+
+/* .block__element :nth-child(1) {
+	order: 0;
+}
+.block__element :nth-child(2) {
+	order: 1;
+}
+.block__element :nth-child(3) {
+	order: 2;
+}
+.block__element :nth-child(4) {
+	order: 3;
+}
+
+.block__element_first {
+} */
+.header {
+	font-size: 50px;
+	color: #000;
+	font-weight: 900;
+	text-align: center;
+	margin: 30px;
+}
+.block {
+	font-size: 0;
+	background-color: #fff;
+	width: 1120px;
+	margin: 0 110px;
+}
+.block__our_promise {
+	width: 583px;
+	margin: 0 0 30px 0;
+}
+.our__promise_title {
+	background: url(../img/Overline\ Mark.svg) left no-repeat;
+	padding: 0 0 0 30px;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5d62b5;
+	font-weight: 700;
+	margin: 0 0 35px 0;
+}
+.our__promise_subtitle {
+	line-height: 42px;
+	font-size: 36px;
+	font-weight: 900;
+	color: #000;
+	margin-top: 20px;
+}
+.block__items {
+	display: flex;
+	justify-content: space-between;
+}
+.block__item {
+	display: flex;
+	column-gap: 23px;
+	flex: 0 0 324px;
+}
+.block__body {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+}
+.block__name {
+	color: #f2726f;
+	font-size: 19px;
+	line-height: 1.5;
+	font-weight: 900;
+	margin: 0 0 5px 0;
+}
+.block__text {
+	color: #4b4b4b;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+.wrapper__dog {
+	width: 1200px;
+	margin: 0 auto;
+}
+.content__dog {
+	background: url(../img/BG\ Image.jpg) 0 0 no-repeat;
+	position: relative;
+	margin-top: 150px;
+}
+.content-dog__image {
+	display: inline-block;
+	border-radius: 40px;
+	overflow: hidden;
+	max-width: 498px;
+	position: absolute;
+	top: -100px;
+	right: 200px;
+}
+.our-impact {
+	width: 411px;
+	display: inline-block;
+	margin: 140px 0 79px 0;
+	padding-left: 100px;
+}
+.our-impact__title {
+	background: url(../img/Overline\ Mark.svg) left no-repeat;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 24px;
+	text-shadow: 0 4px 4px #000;
+	color: #fff;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	padding: 0 0 0 32px;
+}
+.our-impact__subtitle {
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 42px;
+	color: #fff;
+	width: 411px;
+	padding-top: 32px;
+}
+.impact__item {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	flex: 0 0 237px;
+	margin: 0 0 100px 0;
+	padding-left: 50px;
+}
+.item-impact__body {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+.item-impact__numbers {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 900;
+	color: #fff;
+}
+.item-impact__text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #5d62b5;
+}
